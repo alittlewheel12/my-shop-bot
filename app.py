@@ -14,7 +14,7 @@ SHEET_ID = os.environ.get("SHEET_ID")
 GOOGLE_CREDS_JSON = os.environ.get("GOOGLE_CREDS_JSON")
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.5-flash-lite")
 
 def load_sheet_data():
     try:
